@@ -7,10 +7,10 @@
     <title>Stylin' With CSS</title>
     <style>
 
-        html{
+        html {
           background-color: #ccc;
         }
-        body{
+        body {
           font-family:'Courier New';
           background-color: #fff;
           max-width:960px;
@@ -18,8 +18,50 @@
           margin: auto;
           padding: 1%;
         }
-      
-        footer{
+
+        .page-header {
+          background-color: azure;
+          font-family: 'Inknut Antiqua', serif;
+          width:80%;
+          margin:auto;
+          text-align: center;
+          text-shadow: 4px 4px 4px #aaa;
+        }
+
+        /*a {
+          color:black;
+        }
+        a:hover {
+          color:red;
+          background-color:yellow;
+          text-decoration: none;
+        }*/
+
+        /*start nav rules */
+
+        nav {
+          text-align:center; 
+        }
+
+
+        nav a {
+          color:#000; 
+        }     
+
+
+        nav ul {
+          list-style:none; 
+        }
+        nav li {
+          display:inline-block; 
+          margin:0 2%; 
+        }
+        nav a:hover{
+          text-decoration: none; 
+        }
+        /* end nav rules */
+
+        footer {
           clear:both;
           text-align: center;
         }
@@ -54,17 +96,25 @@
     </style>
   </head>
   <body>
-    <h1>Stylin' With CSS</h1>
-    <p>Clever content goes here</p>
-    <p>Clever content goes here</p>
-    <p>Clever content goes here</p>
+    <h1 class="page-header">Stylin' With CSS</h1>
     <nav>
+      <ul>
+        <li><a href="elements.html" target="_blank">HTML Elements</a></li>
+        <li><a href="https://www.w3.org/" target="_blank">The W3C</a></li>
+        <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+        <li><a href="https://linkedin.com/learning/login" target="_blank">LinkedIn Learning Library</a></li>
+      </ul>
+    </nav>
+    <p>Clever content goes here</p>
+    <p>Clever content goes here</p>
+    <p>Clever content goes here</p>
+    <div>
       <ul>
         <li>Avengers</li>
         <li>Titanic</li>
         <li>Men in Black</li>
       </ul>
-    </nav>
+    </div>
     <div>
       <ol>
         <li>Grape</li>
